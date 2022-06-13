@@ -1,0 +1,275 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 980px;
+    margin: 0px auto;
+}
+.maunenheader{
+    background-color: #24272b;
+    line-height: 31px;
+    height: 32px;
+}
+header ul{
+    height: 20px;
+    float: left;
+    margin-left: 50px;
+}
+header ul li{
+    list-style: none;
+    display: inline-block;
+}
+header ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    margin: 0px 10px;
+    display: block;
+}
+header ul li a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    display: block;
+}
+.headerright{
+    float: right;
+    margin-right: 50px;
+}
+.headerright ul.menuright li{
+    display: inline-block;
+    position: relative;
+}
+.headerright ul.menuright li a{
+    text-align: right;
+}
+.headerright ul.sub_menu li a{
+    background-color: #24272b;
+    color: white;
+    width: 80px;
+    text-align: center;
+}
+.headerright ul.sub_menu li a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    display: block;
+}
+.headerright .sub_menu{
+    position: absolute;
+    right: -13px;
+    box-shadow: 0 0 3px #000;
+    width: 100px;
+    height: 65px;
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+    display: none;
+    text-align: left;
+    margin-top: 1px;
+}
+.headerright .sub_menu a{
+    color: #000;
+}
+.headerright .sub_menu a:hover{
+    border: 1px solid #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+.headerright li:hover ul.sub_menu{
+    display: block;
+}
+.phandau{
+    margin-top: 30px;
+}
+.hottline img{
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+.hottline{
+    float: left;
+    width: 200px;
+}
+.hottline span{
+    line-height: 30px;
+    margin-left: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+.logo img{
+    width: 120px;
+    float: left;
+    margin-left: 220px;
+}
+.timkiem{
+    float: right;
+    line-height: 50px;
+}
+.timkiem input{
+    border: 0px;
+    width: 240px;
+    outline: none;
+    border-bottom: 1px solid #cccccc;
+    line-height: 35px;
+}
+.hottline p{
+    margin-left: 40px;
+    margin-top: 0px;
+}
+.timkiem button img{
+    width: 20px;
+    border: none;
+}
+nav ul{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    color: black;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: cyan;
+    cursor: pointer;
+}
+.khung{
+    border: 0.5px solid #cccccc;
+    margin-top: 7px;
+}
+article{
+    width: 100%;
+}
+article .dangky{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+}
+article .dangky div{
+    margin: 0px auto;
+}
+article .dangky h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+.dangky_left form p input{
+    width: 400px;
+    height: 35px;
+    outline: none;
+    border: 1px solid #000;
+}
+.dangky_left form p label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.dangky_left form p input{
+    outline: none;
+    padding-left: 10px;
+}
+.dangky_left form p label span{
+    color: red;
+}
+.dangky_left form button{
+    background-color: #000;
+    color: white;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+.button{
+    text-align: center;
+}
+.button button:hover{
+    background-color: #fff;
+    border: 1px solid #000;
+    color: black;
+    cursor: pointer;
+}
+.dangnhap{
+    text-align: center;
+}
+.dangnhap a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.dangnhap a:hover{
+    color: cyan;
+}
+.dangky_left form p{
+    margin-bottom: 15px;
+}
+.dangky_right{
+    margin: 0px auto;
+}
+.dangky_right h2{
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.dangky_right .logodk img{
+    width: 50px;
+    margin-left: 15px;
+}
+.logodk{
+    text-align: center;
+}
+.dangky_right h4{
+    text-align: center;
+    margin-top: 40px;
+}
+.dangky_right p{
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.dangky_right p a{
+    color: #000;
+}
+.dangky_right p a:hover{
+    color: cyan;
+}
+.chinhsach{
+    width: 220px;
+    float: left;
+    margin: 20px 12px;
+}
+.chinhsach span{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.chinhsach p{
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.cuoi p{
+    float: left;
+    color: #666;
+    font-size: 13px;
+    margin: 30px 12px;
+}
+.cuoi{
+    width: 100%;
+}
+footer{
+    margin-bottom: 50px;
+}
+.img img{
+    width: 120px;
+    float: right;
+    margin-top: 22px;
+}
+.clear{
+    clear: both;
+}

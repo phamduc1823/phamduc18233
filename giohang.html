@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link rel="stylesheet" href="/css/giohang.css">
+        <script src="js/giohang.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <div class="maunenheader">
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="tintuc.html">Tin tức </a></li>
+                        <li><a href="gioithieu.html">Giới thiệu </a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                    <div class="headerright">
+                        <ul class="menuright">
+                            <li><a href="#">Tài khoản </a>
+                                <ul class="sub_menu">
+                                    <li><a href="dangky.html">Đăng ký</a></li>
+                                    <li><a href="dangnhap.html">Đăng nhập</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="giohang.html">Giỏ Hàng (0)</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear"></div>
+
+                <div class="phandau">
+                    <div class="hottline">
+                        <img src="/img/dienthoai.png" alt="">
+                        <span>Hottline: 0868985925</span>
+                        <br><br>
+                        <img src="/img/facebook.png" alt="">
+                        <span>Facebook: phamducxx</span>
+                    </div>
+
+                    <div class="logo">
+                        <img src="/img/logo.png" alt="">
+                    </div>
+
+                    <div class="timkiem">
+                        <input placeholder="Tìm kiếm trên phamduc" type="text">
+                        <a href="#" type="submit"><img src="/img/timkiem.png" alt="" width="20px"></a>
+                    </div>
+                </div>
+            </header>
+
+            <div class="clear"></div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">TRANG CHỦ</a></li>
+                    <li><a href="#">ĐỒNG HỒ</a></li>
+                    <li><a href="#">TÚI XÁCH</a></li>
+                    <li><a href="#">NƯỚC HOA</a></li>
+                    <li><a href="#">GIÀY</a></li>
+                    <li><a href="#">MŨ NÓN</a></li>
+                    <li><a href="#">KÍNH MẮT</a></li>
+                    <li><a href="#">TRANG SỨC</a></li>
+                </ul>
+            </nav>
+
+            <div class="khung"></div>
+
+            <article>
+                <div class="tren">
+                    <img src="img/giohang/giohang1.jpg" alt="">
+                    <h2>Giỏ hàng của bạn</h2>
+                    <div class="clear"></div>
+                    <table>
+                        <tr>
+                            <td>SẢN PHẨM</td>
+                            <td class="tren_dai"></td>
+                            <td>GIÁ</td>
+                            <td>SỐ LƯỢNG</td>
+                            <td>THÀNH TIỀN</td>
+                        </tr>
+                    </table>
+
+                </div>
+
+                <div class="duoi">
+                    <div class="right">
+                        <table>
+                            <tr>
+                                <td><img src="img/giohang/giohang4.jpg" alt="" ></td>
+                                <td><h3>Phương thức thanh toán</h3></td>
+                            </tr>
+                            <br>
+                            <tr>
+                                <td><input type="radio" name="chon"></td>
+                                <td>Thanh toán khi nhận hàng</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="chon"></td>
+                                <td>Thanh toán trực tuyến</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="chon"></td>
+                                <td>Thanh toán bằng chuyển khoản</td>
+                            </tr>
+                        </table>
+                        <table class="dathang">
+                            <tr>
+                                <td><img src="img/giohang/giohang5.jpg" alt=""></td>
+                                <td>
+                                    <h4>Mã giảm giá</h4>
+                                </td>
+                            </tr>
+                        </table>
+                        
+                        <div class="magiamgia">
+                            <input type="text" placeholder="Nhập mã khuyến mãi">
+                            <a href="">ÁP DỤNG</a>
+                        </div>
+                        <div class="dathang1">
+                            <a href="index.html">Tiếp tục mua hàng</a>
+                            <a href="#" onclick="dathang();">Đặt hàng</a>
+                        </div>
+                    </div>
+                    <div class="left">
+                        <h2>Thông tin nhận hàng</h2>
+                        <table class="left_hoten">
+                            <tr>
+                                <td>Họ và tên</td>
+                                <td>Số điện thoại</td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" id="hoten"></td>
+                                <td><input type="text" id="sdt"></td>
+                            </tr>
+                        </table>
+                        <table class="left_quan_huyen">
+                            <tr>
+                                <td>Tỉnh / Thành phố</td>
+                                <td>Quận / Huyện</td>
+                                <td>Phường / Xã</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select id="chonhuyen">
+                                        <option value="" selected style="display: none;"></option>
+                                        <option value="Hà Nội">Hà Nội</option>
+                                        <option value="Hải Phòng">Hải Phòng</option>
+                                        <option value="Hải Dường">Hải Dường</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select id="chon1">
+                                        <option value="" selected style="display: none;"></option>
+                                        <option value="Huyện Mê Linh">Huyện Mê Linh</option>
+                                        <option value="Huyện Hoài Đức">Huyện Hoài Đức</option>
+                                        <option value="Huyện Thạch Thất">Huyện Thạch Thất</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select id="chonxa">
+                                        <option value="" selected style="display: none;"></option>
+                                        <option value="Xã Tiền Phong">Xã Tiền Phong</option>
+                                        <option value="Xã Tự Lập">Xã Tự Lập</option>
+                                        <option value="Xã Tráng Việt">Xã Tráng Việt</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="left_diachi">
+                            <tr>
+                                <td>Địa chỉ</td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" id="diachi"></td>
+                            </tr>
+                        </table>
+                        <table class="left_email">
+                            <tr>
+                                <td>Email</td>
+                                <td>Ghi chú giao hàng</td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" id="email"></td>
+                                <td>
+                                    <select name="" id="chongiaohang">
+                                        <option value="" selected style="display: none;"></option>
+                                        <option value="Giao trong giờ hành chính">Giao trong giờ hành chính</option>
+                                        <option value="Giao ngoài giờ hành chính">Giao ngoài giờ hành chính</option>
+                                        <option value="Đặt hàng hộ người thân">Đặt hàng hộ người thân</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                        
+
+                        <div class="hinhthucgiaohang">
+                            <img src="img/giohang/giohang3.jpg" alt="">
+                            <h2>Hình thức giao hàng</h2>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="giaohang">
+                            <input type="radio" id="radio">
+
+                            <p>Miễn phí vận chuyển đối với đơn hàng từ 500.000đ giao tại nội thành Hà Nội, TP Hồ
+                                Chí Minh.
+                                Các địa chỉ khác: 30.000đ</p>
+
+                        </div>
+                        <div class="clear"></div>
+
+                    </div>
+
+                   
+                </div>
+            </article>
+
+            <div class="khung"></div>
+
+            <footer>
+                <div class="chinhsach">
+                    <span>THÔNG TIN</span>
+                    <p>
+
+                        Pham Duc là gì? <br><br>
+                        Quy chế hoạt động <br><br>
+                        Hợp tác với Pham Duc <br><br>
+                        Liên hệ <br><br>
+                        Gửi yêu cầu hỗ trợ
+                    </p>
+                </div>
+                <div class="chinhsach">
+                    <span>CÂU HỎI THƯỜNG GẶP</span>
+                    <p>
+
+                        Hướng dẫn cách tra cứu mã đơn <br><br> mua trên phamduc <br><br>
+                        Sản phẩm cần đổi hết hàng? <br><br>
+                        Nếu không có hóa đơn mua hàng <br><br>tôi có thể trả lại sản phẩm không? <br><br>
+                        Tôi có thể trả lại sản phẩm vì <br><br> không ưng ý?
+
+                    </p>
+                </div>
+                <div class="chinhsach">
+                    <span>CHĂM SÓC KHÁCH HÀNG</span>
+                    <p>
+
+                        Chính sách bán hàng <br> <br>
+                        Chính sách bảo hành <br><br>
+                        Chính sách giao hàng <br><br>
+                        Chính sách đổi trả và hoàn tiền <br><br>
+                        Chính sách thanh toán <br><br>
+                        Chính sách bảo mật thanh toán
+
+                    </p>
+                </div>
+                <div class="chinhsach">
+                    <span>DỊCH VỤ KHÁCH HÀNG</span>
+                    <p>
+
+                        Tên doanh nghiệp:
+                        Công Ty Cổ <br><br> Phần Thương Mại Phamduc <br><br>
+                        Hotline:
+                        086.898.5927 <br><br>
+                        Tổng đài:
+                        19600 1331 <br><br>
+                        Email:
+                        cskh@phamduc.com <br><br>
+
+                    </p>
+                </div>
+                <div class="clear"></div>
+
+                <div class="khung"></div>
+                <div class="cuoi">
+                    <p>© 2021 PHAMDUC
+                    </p>
+                    <p>ĐIỀU KHOẢN</p>
+                    <p>CHÍNH SÁCH BẢO MẬT</p>
+
+                    <div class="img">
+                        <img src="/img/footer1.jpg" alt="">
+
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="khung"></div>
+            </footer>
+            <script src="https://uhchat.net/code.php?f=30887d"></script>
+        </div>
+    </body>
+
+    </html>
+</body>
+
+</html>

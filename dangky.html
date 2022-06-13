@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link rel="stylesheet" href="css/dangky.css">
+        <script src="js/dangky.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <div class="maunenheader">
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="tintuc.html">Tin tức </a></li>
+                        <li><a href="gioithieu.html">Giới thiệu </a></li>
+                        <li><a href="lienhe.html">Liên hệ</a></li>
+                    </ul>
+                    <div class="headerright">
+                        <ul class="menuright">
+                            <li><a href="#">Tài khoản </a>
+                                <ul class="sub_menu">
+                                    <li><a href="dangky.html">Đăng ký</a></li>
+                                    <li><a href="dangnhap.html">Đăng nhập</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="giohang.html">Giỏ Hàng (0)</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear"></div>
+
+                <div class="phandau">
+                    <div class="hottline">
+                        <img src="img/dienthoai.png" alt="">
+                        <span>Hottline: 0868985925</span>
+    <br><br>
+                        <img src="img/facebook.png" alt="">
+                        <span>Facebook: phamducxx</span>
+                    </div>
+    
+                    <div class="logo">
+                        <img src="img/logo.png" alt="">
+                    </div>
+    
+                    <div class="timkiem">
+                        <input placeholder="Tìm kiếm trên phamduc" type="text">
+                        <a href="#" type="submit"><img src="img/timkiem.png" alt="" width="20px"></a>
+                    </div>
+                </div>
+            </header>
+            <div class="clear"></div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">TRANG CHỦ</a></li>
+                    <li><a href="dongho.html">ĐỒNG HỒ</a></li>
+                    <li><a href="tuixach.html">TÚI XÁCH</a></li>
+                    <li><a href="#">NƯỚC HOA</a></li>
+                    <li><a href="#">GIÀY</a></li>
+                    <li><a href="#">MŨ NÓN</a></li>
+                    <li><a href="#">KÍNH MẮT</a></li>
+                    <li><a href="#">TRANG SỨC</a></li>
+                </ul>
+            </nav>
+
+            <div class="khung"></div>
+
+            <article>
+                <div class="dangky">
+                    <div class="dangky_left">
+                        <h1>Thông tin đăng ký tài khoản</h1>
+                        <form>
+                            <p>
+                                <label>Họ và tên <span>*</span></label><br>
+                                <input type="text" id="hoten">
+                            </p>
+                            <p>
+                                <label>Email <span>*</span></label><br>
+                                <input type="text" id="email">
+                            </p>
+                            <p>
+                                <label>Điện thoại <span>*</span></label><br>
+                                <input type="text" id="dienthoai">
+                            </p>
+                            <P>
+                                <label>Tên đăng nhập <span>*</span></label><br>
+                                <input type="text" id="tendn">
+                            </P>
+                            <p>
+                                <label>Mật khẩu <span>*</span></label><br>
+                                <input type="password" id="mk">
+                            </p>
+                            <p>
+                                <label>Nhập lại mật khẩu <span>*</span></label><br>
+                                <input type="password" id="nhaplaipass">
+                            </p>
+                            <div class="button">
+                                <button type="button" onclick="dangky();">ĐĂNG KÝ</button>
+                            </div>
+                            <p class="dangnhap">Bạn đã có tài khoản? <a href="dangnhap.html">Đăng nhập</a></p>
+                        </form>
+                    </div>
+                    <div class="dangky_right">
+                        <h2>Hoặc đăng nhập bằng</h2>
+                        <div class="logodk">
+                            <img src="img/logofb.jpg" alt="">
+                            <img src="img/logogg.png" alt="">
+                        </div>
+                        <h4>Các đặc quyền khi đăng ký tài khoản</h4>
+                        <p>
+                            Nhận quyền truy cập độc quyền vào các giao dịch và sự kiện. <br>
+                            Lưu các mục yêu thích vào danh sách yêu thích của bạn. <br>
+                            Lưu các đơn đặt hàng và số theo dõi đơn hàng của bạn. <br>
+                        </p>
+
+                        <h4>Dịch vụ khách hàng</h4>
+                        <p>Bạn cần giúp đỡ? Xin hãy gọi điện đến Hotline: <a href="#">086.898.5925</a></p>
+                    </div>
+                </div>
+            </article>
+
+            <div class="khung"></div>
+
+            <footer>
+                <div class="chinhsach">
+                    <span>THÔNG TIN</span>
+                    <p>
+
+                        Pham Duc là gì? <br><br>
+                        Quy chế hoạt động <br><br>
+                        Hợp tác với Pham Duc <br><br>
+                        Liên hệ <br><br>
+                        Gửi yêu cầu hỗ trợ
+                    </p>
+                </div>
+                <div class="chinhsach">
+                    <span>CÂU HỎI THƯỜNG GẶP</span>
+                    <p>
+
+                        Hướng dẫn cách tra cứu mã đơn <br><br> mua trên phamduc <br><br>
+                        Sản phẩm cần đổi hết hàng? <br><br>
+                        Nếu không có hóa đơn mua hàng <br><br>tôi có thể trả lại sản phẩm không? <br><br>
+                        Tôi có thể trả lại sản phẩm vì <br><br> không ưng ý?
+
+                    </p>
+                </div>
+                <div class="chinhsach">
+                    <span>CHĂM SÓC KHÁCH HÀNG</span>
+                    <p>
+
+                        Chính sách bán hàng <br> <br>
+                        Chính sách bảo hành <br><br>
+                        Chính sách giao hàng <br><br>
+                        Chính sách đổi trả và hoàn tiền <br><br>
+                        Chính sách thanh toán <br><br>
+                        Chính sách bảo mật thanh toán
+
+                    </p>
+                </div>
+                <div class="chinhsach">
+                    <span>DỊCH VỤ KHÁCH HÀNG</span>
+                    <p>
+
+                        Tên doanh nghiệp:
+                        Công Ty Cổ <br><br> Phần Thương Mại Phamduc <br><br>
+                        Hotline:
+                        086.898.5927 <br><br>
+                        Tổng đài:
+                        19600 1331 <br><br>
+                        Email:
+                        cskh@phamduc.com <br><br>
+
+                    </p>
+                </div>
+                <div class="clear"></div>
+
+                <div class="khung"></div>
+                <div class="cuoi">
+                    <p>© 2021 PHAMDUC
+                    </p>
+                    <p>ĐIỀU KHOẢN</p>
+                    <p>CHÍNH SÁCH BẢO MẬT</p>
+
+                    <div class="img">
+                        <img src="img/footer1.jpg" alt="">
+
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="khung"></div>
+            </footer>
+            <script src="https://uhchat.net/code.php?f=30887d"></script>
+        </div>
+    </body>
+
+    </html>
+</body>
+
+</html>
